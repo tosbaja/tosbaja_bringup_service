@@ -2,7 +2,7 @@
 After=network.target
 
 [Service]
-ExecStart=/home/dev/Desktop/tosbaja_startup.sh
+ExecStart=/usr/local/bin/tosbaja_startup.sh
 
 [Install]
 WantedBy=default.target

@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "a"
+ros2 launch start_tosbaja launch_sim.launch.py

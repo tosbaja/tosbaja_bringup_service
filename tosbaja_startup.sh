@@ -1,3 +1,4 @@
 #!/bin/bash
-
-ros2 launch start_tosbaja launch_sim.launch.py
+source /opt/ros/humble/setup.bash
+source /home/gna/ws/install/setup.bash
+ros2 launch start_tosbaja rsp.launch.py

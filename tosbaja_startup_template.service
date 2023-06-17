@@ -1,0 +1,13 @@
+[Unit]
+After=network.target
+
+[Service]
+Type=simple
+User=current_user
+Environment="ROS_DOMAIN_ID=ros_domain_id"
+Environment="ROS_DISTRO=ros_distro"
+Environment="WORK_SPACE_PATH=/work_space_path"
+ExecStart=/usr/bin/bash /usr/local/bin/tosbaja_startup.sh
+TimeoutStopSec=1
+[Install]
+WantedBy=multi-user.target
